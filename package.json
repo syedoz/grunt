@@ -1,10 +1,10 @@
 {
-  "name": "tigerspike",
+  "name": "pinpointmedia",
   "version": "0.0.1",
-  "description": "Test assignment for tigerspike",
+  "description": "Pinpoint Media",
   "repository": {
     "type": "git",
-    "url": "https://github.com/syedoz/tigerspike"
+    "url": "https://github.com/syedoz/pinpoint"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
