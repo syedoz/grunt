@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
 	margin: 0;
 	padding: 0;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
 }
 html {height: 100%;}
 
@@ -16,6 +18,17 @@ html {height: 100%;}
 .pull-left {float: left;}
 .push-right {float: right;}
 h1, h2, h3, h4, h5, p {margin: 0; padding: 0;}
+p {font-size: 18px; line-height: 22px;}
+section {height: 100%;}
+
+.heading_full {
+	position: relative; margin: 70px 0px;
+	h2 {
+		position: relative; z-index: 20; background: $light_bg; display: table; margin: auto;
+		padding: 0px 25px; letter-spacing: 2px; font-size: 20px; text-transform: uppercase; color: $text_light;
+	}
+	&:after {content: ""; position: absolute; width: 100%; z-index: 10; height: 1px; background: $text_light; top: 15px;}
+}
 
 a:focus, a:hover {outline: none; text-decoration: none;}
 a {text-decoration: none;}

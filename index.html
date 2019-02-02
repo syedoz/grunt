@@ -22,42 +22,66 @@
     </ul>
 </header>
 
-<section class="banner">
-    <div class="container-fluid alpha omega">
+<section>
+    <div class="container-fluid alpha omega banner_container">
         <div class="col-md-6 hero alpha omega">
             <img src="build/images/banner.png">
         </div>
         <div class="col-md-6 form">
             <div class="form_container">
-                <h2><img src="build/images/form_logo.jpg"></h2>
-                <p>The new way to discover, book and save at the best venues and events in Dubai.</p>
-                <form>
-                <div class="row full">
-                    <label>Search</label>
-                    <input type="text" placeholder="What are you looking for...">
+                <div class="inner">
+                    <h2><img src="build/images/form_logo.jpg"></h2>
+                    <p>The new way to discover, book and save at the best venues and events in Dubai.</p>
+                    <form>
+                    <div class="row full">
+                        <label>Search</label>
+                        <input type="text" placeholder="What are you looking for...">
+                    </div>
+                    <div class="row half">
+                        <label>Location</label>
+                        <select>
+                            <option>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="row half">
+                        <label>Category</label>
+                        <select>
+                            <option>Select</option>
+                            <option>Category 1</option>
+                            <option>Category 2</option>
+                            <option>Category 3</option>
+                        </select>
+                    </div>
+                    <div class="row half">
+                        <input type="submit" value="Search">
+                    </div>
+                    </form>
                 </div>
-                <div class="row half">
-                    <label>Location</label>
-                    <select>
-                        <option>Select</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                    </select>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+<section>
+    <div class="featured_wrapper">
+        <div class="container">
+            <div class="heading_full">
+                <h2>Featured Venues</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="featured_item">
+                    <div class="image"><img src="build/images/img1.jpg"></div>
+                    <div class="content">
+                        <h3>Venue Name With Offer Description</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#" class="more">Go to Venue</a>
+                    </div>
                 </div>
-                <div class="row half">
-                    <label>Category</label>
-                    <select>
-                        <option>Select</option>
-                        <option>Category 1</option>
-                        <option>Category 2</option>
-                        <option>Category 3</option>
-                    </select>
-                </div>
-                <div class="row half">
-                    <input type="submit" value="Search">
-                </div>
-                </form>
             </div>
         </div>
     </div>
