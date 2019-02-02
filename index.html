@@ -3,77 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tigerspike</title>
+<title>Pinpoint Media</title>
 <link href="build/css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <ul class="pull-left">
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <ul class="push-right">
-                <li><a href="#">Signup</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-        <div class="breadcrumbs">
-            <ul>
-                <li><a href="#">[Breadcrumbs]</a></li>
-            </ul>
-        </div>
-    </div>
+    <ul class="left">
+        <li class="icon-type"><img src="build/images/pin.png"></li>
+        <li class="icon-type"><img src="build/images/hamburger.png"></li>
+    </ul>
+    <div class="logo"><img src="build/images/logo.png"></div>
+    <ul class="right">
+        <li></li>
+        <li></li>
+        <li class="icon-type"><img src="build/images/search.png"></li>
+    </ul>
 </header>
 
-<section>
-    <div class="container form-area">
-        <header>
-            <h2>Register</h2>
-            <p>Create and account and get started today</p>
-        </header>
-        <div class="form-container">
-            <form id="myForm">
-                <div class="from-row">
-                    <label>Forename*</label>
-                    <input type="text" placeholder="Forename" name="firstname">
+<section class="banner">
+    <div class="container-fluid alpha omega">
+        <div class="col-md-6 hero alpha omega">
+            <img src="build/images/banner.png">
+        </div>
+        <div class="col-md-6 form">
+            <div class="form_container">
+                <h2><img src="build/images/form_logo.jpg"></h2>
+                <p>The new way to discover, book and save at the best venues and events in Dubai.</p>
+                <form>
+                <div class="row full">
+                    <label>Search</label>
+                    <input type="text" placeholder="What are you looking for...">
                 </div>
-                <div class="from-row">
-                    <label>Surname*</label>
-                    <input type="text" placeholder="Surname" name="surname">
+                <div class="row half">
+                    <label>Location</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
                 </div>
-                <div class="from-row">
-                    <label>Sex*</label>
-                    <input type="text" placeholder="Sex" name="sex">
+                <div class="row half">
+                    <label>Category</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                        <option>Category 3</option>
+                    </select>
                 </div>
-                <div class="from-row">
-                    <label>Date of birth</label>
-                    <input type="text" placeholder="Forename" name="dob">
+                <div class="row half">
+                    <input type="submit" value="Search">
                 </div>
-                <div class="from-row">
-                    <label>Email Address *</label>
-                    <input type="text" placeholder="Email Address" name="email" id="email">
-                </div>
-                <div class="from-row">
-                    <label>Verify Email Address*</label>
-                    <input type="text" placeholder="Verify Email Address" name="email_again">
-                </div>
-                <div class="from-row">
-                    <label>Password*</label>
-                    <input type="password" placeholder="Password" name="password">
-                    <p>Use between 7 - 25 characters. At least one uppercase character. At least one number.</p>
-                </div>
-                <input type="submit" value="Register">
-            </form>
-            <aside>
-                <p>Already a member?</p>
-                <input type="submit" value="Login">
-            </aside>
+                </form>
+            </div>
         </div>
     </div>
 </section>
