@@ -11,6 +11,7 @@ module.exports = function(grunt) {
         src: [
           'node_modules/jquery/dist/jquery.js',
           'node_modules/jquery-validation/dist/jquery.validate.js',
+          'node_modules/owl-carousel/owl-carousel/owl.carousel.min.js',
           'src/js/*.js'
         ],
         dest: 'build/js/<%= pkg.name %>.min.js'

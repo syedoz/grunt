@@ -29,3 +29,17 @@ $(function(){
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
 });
+
+//OWL Carousel
+
+$('#highlights').owlCarousel({
+    center: true,
+    items:5,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+})

@@ -9,7 +9,7 @@
 @import "theme";
 
 /* Plugins */
-// @import "vendors/owl/owl.carousel";
+@import "vendors/owl/owl.carousel";
 
 /* Components */
 @import "components/header";
@@ -17,6 +17,8 @@
 @import "components/cta";
 @import "components/featured_item";
 @import "components/creditCard";
+@import "components/slider";
+@import "components/subscribe_form";
 
 /* Partials */
 @import "partials/home";

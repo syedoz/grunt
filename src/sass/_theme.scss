@@ -4,6 +4,7 @@ body{
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
+	overflow-x: hidden;
 }
 html {height: 100%;}
 
@@ -30,7 +31,7 @@ section {height: 100%;}
 	&:after {content: ""; position: absolute; width: 100%; z-index: 10; height: 1px; background: $text_light; top: 15px;}
 }
 
-a:focus, a:hover {outline: none; text-decoration: none;}
+a:focus, a:hover, input:focus {outline: none; text-decoration: none;}
 a {text-decoration: none;}
 ul {margin: 0; padding: 0;}
 li {list-style-type: none; display: inline-block;}
