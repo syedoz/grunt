@@ -1,3 +1,5 @@
 .featured_wrapper {
-    background: $light_bg;
+    background: $light_bg; padding-bottom: 70px;
 }
+
+.spacer {display: block; clear: both; width: 100%; height: 1px; background: $text_light; margin: 70px 0px 30px;}
