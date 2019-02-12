@@ -1,0 +1,65 @@
+.banner_container {
+    height: 100%;
+    .hero {
+        img {width: 100%;}
+    }
+}
+
+.form {
+    height: 100%;
+    .inner {height: 100%; display: table-cell; vertical-align: middle;}
+    .content_container {max-width: 388px; margin: auto; height: 100%; display: table;}
+    h2 img {max-width: 250px;}
+    p {margin: 30px 0px;}
+    form {
+        label {display: block; text-transform: uppercase; color: $baseColor; font-size: 14px; letter-spacing: 4px;}
+        input {
+            width: 100%; margin-top: 5px; padding-bottom: 4px;
+            &[type=text]{border: none; border-bottom: 0.15em solid $border_light;}
+            &:focus {outline: 0;}
+            &::-webkit-input-placeholder {color: $placeholder; font-size: 12px;}
+            &::-moz-placeholder {color: $placeholder; font-size: 12px;}
+            &:-ms-input-placeholder {color: $placeholder; font-size: 12px;}
+            &:-moz-placeholder {color: $placeholder; font-size: 12px;}
+            &[type=submit]{
+                border: 0.15em solid $border_light; text-transform: uppercase; color: #bdbdbd;
+                letter-spacing: 3px; font-size: 10px; padding: 5px 0px; cursor: pointer;
+            }
+        }
+        select{
+            border: none; border-bottom: 0.15em solid $border_light; border-right: 0.15em solid $border_light;
+            -webkit-appearance: none;  -moz-appearance: none; appearance: none; width: 100%; margin-top: 5px;
+            border-radius: 0; background: none; color: $placeholder; font-size: 12px; padding-bottom: 4px;
+            &:focus {outline: 0;}
+            option {
+                &:first-child {color: $placeholder;}
+            }
+        }
+        .row {
+            float: left; margin: 22px 0;
+            &.half {
+                width: 50%;
+                &:nth-child(even) {padding-right: 10px;}
+                &:nth-child(odd) {padding-left: 10px;}
+            }
+            &.full {width: 100%;}
+        }
+        @include clearfix()
+    }
+}
+
+.banner_bottom {
+    background: #0055fe; color: $white;
+    .form {
+        .content_container {
+            max-width: 80%; width: 100%; position: relative;
+            .head {position: absolute; top: 15px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
+            .date {position: absolute; bottom: 15px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
+            h2 {font-size: 60px; text-align: center; line-height: 75px;}
+            .cta_common {
+                display: table; margin: auto; color: $white;
+                padding: 6px 35px; margin-top: 40px;
+            }
+        }
+    }
+}

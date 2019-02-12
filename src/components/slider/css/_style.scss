@@ -1,0 +1,21 @@
+.slider_wrapper {
+    margin-top: 190px;
+    .owl-carousel .owl-item {
+        margin: 0px 15px; cursor: url(../images/drag.png), auto;
+        img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .featured_item .image {height: 330px;}
+    }
+}
+
+.posts {
+    .slider_wrapper {margin-top: 0px;}
+    .heading_full {
+        margin: 0px 0px 70px;
+        h2 {background: $white;}
+    }
+}

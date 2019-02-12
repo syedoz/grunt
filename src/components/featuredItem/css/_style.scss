@@ -1,0 +1,38 @@
+.featured_item {
+    .image {margin-bottom: 8px; position: relative;}
+    .tag {
+        position: absolute; opacity: 0.98;
+        span {
+            display: block; float: left;
+            &.pin {
+                background: url(../images/pin_white.png) no-repeat center #d9d9da;
+                background-size: 65%; width: 30px; height: 28px;
+            }
+            &.heading {
+                background: $white; text-transform: uppercase; font-size: 9px; letter-spacing: 2px; color: $baseColor;
+                padding: 8px 10px;
+            }
+        }
+    }
+    img {width: 100%;}
+    h3 {font-size: 18px;}
+    p {font-size: 13px; line-height: 18px; color: $light_p; margin: 15px 0px;}
+    .more {
+        text-transform: uppercase; font-size: 9px; letter-spacing: 2px; color: $baseColor; text-decoration: none;
+        position: relative; display: table; padding-right: 14px;
+        &:focus {outline: 0; text-decoration: none;}
+        &:after {content: ""; display: block; position: absolute; bottom: -6px; border-bottom: 1px solid $baseColor; width: 100%;}
+    }
+}
+
+.featured_more {
+    .heading_full h2 {background: #fff;}
+}
+
+aside {
+    .featured_item {
+        border-bottom: 2px solid $border_light; margin: 80px 0px; padding-bottom: 80px;
+        &:first-child {margin-top: 0;}
+        &:last-child {padding-bottom: 0; margin-bottom: 50px; border: 0;}
+    }
+ }

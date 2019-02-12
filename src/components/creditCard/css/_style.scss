@@ -1,0 +1,80 @@
+.creditCard_container {
+    background: $purple;
+    color: #fff;
+    padding: 140px 0px;
+    margin-top: 70px;
+    .content {
+        span {text-transform: uppercase; font-size: 8px; letter-spacing: 3px;}
+        h2 {font-size: 36px; font-weight: 300; line-height: 44px; margin: 30px 0px;}
+        p {font-size: 18px; font-weight: 300; margin-bottom: 50px; line-height: 24px;}
+        .cta_common {
+            color: #fff; padding: 6px; min-width: 150px; margin-right: 25px;
+            display: inline-block; text-align: center; font-size: 8px;
+            &:hover {background: $white; color: $baseColor;}
+        }
+    }
+
+    #mainWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+      }
+      
+      #cardsWrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        
+      }
+      
+      .card{
+        width: 460px;
+        height: 330px;
+        perspective: 500px;
+        position: relative;
+      }
+      
+      .image{
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        //transform: rotateX(30deg) rotateY(30deg);
+      }
+      
+      .image.first{
+        background: url("../images/card.png") no-repeat; background-size: 100%;
+      }
+      
+      .screen{
+        background-color: rgba(0, 0, 0, 0.22);
+        width: 100%;
+        height: 100%;
+        transform: translateZ(30px) scale(0.940);
+      }
+      
+      .text{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        color: white;
+        transform: translateZ(30px) scale(0.940);
+        font-family: 'Quicksand', sans-serif;
+      }
+      
+      .text p{
+          cursor: default;
+          padding: 0;
+          margin: 0;
+      }
+      
+      .text p:first-of-type{
+          font-size: 2em;
+          margin-bottom: 5px;
+          font-weight: 500;
+      }
+      .text p:last-of-type{
+          font-size: 1em;
+          font-weight: 400;
+      }
+}

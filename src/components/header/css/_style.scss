@@ -1,0 +1,38 @@
+header {
+    border-bottom: 1px solid $border_dark; position: fixed; width: 100%; background: $white; z-index: 100;
+    ul {
+        margin: 0; padding: 0;
+        &.left {float: left; position: relative; z-index: 30;}
+        &.right {
+            float: right;
+            li &.icon-type {border-left: 1px solid $border_dark; border-right: 0;}
+        }
+    }
+    li {
+        list-style-type: none; display: inline-block; float: left;
+        &.icon-type {
+            border-right: 1px solid $border_dark;
+            padding: 14px 16px;
+            img {max-width: 16px;}
+        }
+    }
+    .right {
+        li {&.icon-type {border-left: 1px solid $border_dark; border-right: 0;}}
+    }
+    .logo {
+        position: absolute; left: 0; right: 0; top: 10px; margin-left: auto; margin-right: auto; width: 18px; z-index: 20;
+        img {width: 100%;}
+    }
+    #toggling_nav {
+        padding: 15px 0px; background: $white; display: none;
+        li {
+            margin-left: 20px; font-size: 13px;
+            a {
+                color: $black;
+                &:hover {color: $baseColor;}
+            }
+        }
+        &.nav_open {display: block;}
+    }
+    @include clearfix();
+}

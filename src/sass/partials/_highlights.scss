@@ -1,0 +1,22 @@
+.highlights {
+    .heading_full {
+        h2 {background: $white;}
+    }
+    .video_section {
+        position: relative; cursor: url(../images/play.png), auto;
+        .details {
+            position: absolute; bottom: 0px; left: 0; right: 0;
+            .title {
+                background: $white; color: $black; width: 92%; padding: 15px 25px;
+                text-transform: uppercase; letter-spacing: 3px; opacity: 0.9;
+                span {color: $baseColor;}
+            }
+            .duration {
+                background: $black; color: $white; width: 8%; padding: 15px 25px;
+                text-transform: uppercase; letter-spacing: 3px;
+            }
+            div {float: left;}
+        }
+        img {width: 100%;}
+    }
+}
