@@ -12,7 +12,8 @@ module.exports = function(grunt) {
           'node_modules/jquery/dist/jquery.js',
           'node_modules/jquery-validation/dist/jquery.validate.js',
           'node_modules/owl-carousel/owl-carousel/owl.carousel.min.js',
-          'src/js/*.js'
+          'src/js/*.js',
+          'src/components/**/js/*.js'
         ],
         dest: 'build/js/<%= pkg.name %>.min.js'
       }
@@ -59,11 +60,11 @@ module.exports = function(grunt) {
     },
     watch: {
       sass: {
-        files: ['src/sass/*.scss','src/sass/**/*.scss'],
+        files: ['src/sass/*.scss','src/sass/**/*.scss','src/components/**/css.scss'],
         tasks: ['sass'],
       },
       scripts: {
-        files: ["*.js","src/js/*.js"],
+        files: ["*.js","src/js/*.js","src/components/**/js/*.js"],
         tasks: ['uglify'],
       },
     }

@@ -12,16 +12,19 @@
 @import "vendors/owl/owl.carousel";
 
 /* Components */
-@import "components/header";
-@import "components/banner";
-@import "components/cta";
-@import "components/featured_item";
-@import "components/creditCard";
-@import "components/slider";
-@import "components/subscribe_form";
+@import "../components/header/css/style";
+@import "../components/hamburger/css/style";
+@import "../components/banner/css/style";
+@import "../components/cta/css/style";
+@import "../components/featuredItem/css/style";
+@import "../components/creditCard/css/style";
+@import "../components/slider/css/style";
+@import "../components/subscribeForm/css/style";
+@import "../components/featuredArticle/css/style";
 
 /* Partials */
 @import "partials/home";
 @import "partials/highlights";
+@import "partials/footer";
 /*==================== Page wise CSS ===================*/
 /*======================================================*/
