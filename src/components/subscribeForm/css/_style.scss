@@ -1,15 +1,19 @@
 .subscribe_form {
-    color: $black; margin-top: 50px;
-    .small_txt {font-size: 10px; letter-spacing: 3px; text-transform: uppercase;}
+    color: $black; margin-top: 50px; margin-bottom: 70px;
+    .small_txt {
+        font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace; font-weight: 500;
+    }
     p {
-        font-size: 40px; font-weight: 300; line-height: 60px; margin: 50px 0px;
+        font-size: 38px; font-weight: 300; line-height: 48px; margin: 50px 0px;
+        padding-right: 70px;
         span {font-weight: 400;}
     }
     .form_row {
         width: 100%; border-top: 1px solid $text_light; border-bottom: 1px solid $text_light; font-size: 0;
         padding: 8px 0px;
         input {
-            text-transform: uppercase; width: 33.33%; display: inline-block; font-size: 16px; border: 0;
+            text-transform: uppercase; width: 33.33%; display: inline-block; font-size: 13px; border: 0;
             border-right: 1px solid $text_light; padding: 40px 20px; letter-spacing: 3px;
             &:last-child {border-right: 0; text-align: center; color: $baseColor; background: $white; cursor: pointer;}
             &::-webkit-input-placeholder {color: $placeholder;}
@@ -19,4 +23,12 @@
         }
     }
 }
-.subscribe {margin-top: -170px;}
+
+@media only screen and (max-width: 620px) {
+    .subscribe_form p {
+        font-size: 26px; line-height: 35px; margin: 30px 0; padding-right: 20px;
+    }
+    .subscribe_form {margin-top: 20px;}
+    .subscribe_form .form_row input {width: 100%; border-right: 0; font-size: 11px; padding: 30px 10px;}
+    .subscribe_form .form_row input[type=text] {border-bottom: 1px solid #cacaca;}
+}

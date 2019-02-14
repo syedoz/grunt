@@ -1,8 +1,8 @@
 header {
-    border-bottom: 1px solid $border_dark; position: fixed; width: 100%; background: $white; z-index: 100;
+    border-bottom: 1px solid $border_dark; position: fixed; width: 100%; background: $white; z-index: 100; left: 0;
     ul {
         margin: 0; padding: 0;
-        &.left {float: left; position: relative; z-index: 30;}
+        &.left {float: left; position: relative; z-index: 30; background: $white;}
         &.right {
             float: right;
             li &.icon-type {border-left: 1px solid $border_dark; border-right: 0;}
@@ -14,6 +14,23 @@ header {
             border-right: 1px solid $border_dark;
             padding: 14px 16px;
             img {max-width: 16px;}
+        }
+        &#toggle_fav {
+            cursor: pointer; width: 49px; position: relative; overflow: hidden;
+            -webkit-transition: width 0.5s; transition: width 0.5s; background: $white;
+            span {
+                display: none; float: left; text-transform: uppercase; font-size: 13px;
+                letter-spacing: 3px; position: absolute; white-space: nowrap; left: 50px;
+            }
+            &:before {
+                content: ""; display: block; width: 16px; height: 16px; padding: 10px 0px;
+                background: url(../images/pin.png) no-repeat; background-size: contain; float: left;
+            }
+            &.active {
+                width: $slideLeft;
+                &:before {background: url(../images/pin_blue.png) no-repeat; background-size: contain;}
+                span {display: block;}
+            }
         }
     }
     .right {
@@ -35,4 +52,28 @@ header {
         &.nav_open {display: block;}
     }
     @include clearfix();
+}
+
+.overlay {
+    position: fixed; top: 0; bottom: 0; right: 0; left: 0;
+    background: rgba(0,0,0,0.5); z-index: 80; display: none;
+}
+
+.slide .overlay {display: block;}
+
+@media only screen and (max-width: 620px) {
+    header #toggling_nav {
+        position: fixed; top: 49px; width: 100%; border-bottom: 1px solid $border_dark;
+    }
+    header #toggling_nav li {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 12px 20px;
+    }
+    header ul.right {
+        position: absolute;
+        right: 0;
+        z-index: 20;
+    }
 }

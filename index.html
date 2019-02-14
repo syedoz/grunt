@@ -11,7 +11,9 @@
 
 <header>
     <ul class="left">
-        <li class="icon-type"><img src="build/images/pin.png"></li>
+        <li class="icon-type" id="toggle_fav">
+            <span>Your Favourites</span>
+        </li>
         <li class="icon-type">
             <div id="nav-icon3">
                 <span></span>
@@ -42,7 +44,7 @@
 </header>
 
 <section>
-    <div class="container-fluid alpha omega banner_container">
+    <div class="container-fluid alpha omega banner_container hero_section">
         <div class="col-md-6 hero alpha omega">
             <img src="build/images/banner.png">
         </div>
@@ -87,8 +89,10 @@
 <section>
     <div class="featured_wrapper">
         <div class="container">
-            <div class="heading_full">
-                <h2>Featured Venues</h2>
+            <div class="col-md-12">
+                <div class="heading_full">
+                    <h2>Featured Venues</h2>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="featured_item">
@@ -145,14 +149,14 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="spacer"></div>
+            <div class="col-md-12"><div class="spacer"></div></div>
 
             <div class="col-md-3">
                 <div class="featured_item">
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">Article</span>
                         </div>
                         <img src="build/images/img1.jpg">
                     </div>
@@ -170,7 +174,7 @@
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">Review</span>
                         </div>
                         <img src="build/images/img2.jpg">
                     </div>
@@ -206,7 +210,7 @@
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">News</span>
                         </div>
                         <img src="build/images/img1.jpg">
                     </div>
@@ -225,7 +229,7 @@
 <div class="clearfix"></div>
 <section>
     <div class="creditCard_container">
-        <div class="container">
+        <div class="container-fluid">
             <div class="col-md-6">
                 <div id="mainWrapper">
                     <div id="cardsWrapper">
@@ -250,17 +254,19 @@
 </section>
 <section>
     <div class="container highlights">
-        <div class="heading_full">
-            <h2>Highlights</h2>
-        </div>
-        <div class="video_section">
-            <img src="build/images/video.jpg">
-            <div class="details">
-                <div class="title">Steve Aoki Live at nasimi beach <span>16/04/2017</span></div>
-                <div class="duration">42:17</div>
+        <div class="col-md-12">
+            <div class="heading_full">
+                <h2>Highlights</h2>
             </div>
+            <div class="video_section">
+                <img src="build/images/video.jpg">
+                <div class="details">
+                    <div class="title">Steve Aoki Live at nasimi beach <span>16/04/2017</span></div>
+                    <div class="duration">42:17</div>
+                </div>
+            </div>
+            <div class="spacer"></div>
         </div>
-        <div class="spacer"></div>
     </div>
 </section>
 <div class="clearfix"></div>
@@ -277,7 +283,6 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
@@ -291,7 +296,6 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
@@ -305,7 +309,6 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
@@ -319,7 +322,6 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
@@ -333,7 +335,6 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
@@ -347,12 +348,12 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
-                    <a href="#" class="more">Go to Venue</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
 </section>
 
 <section class="subscribe">
@@ -374,7 +375,7 @@
     </div>
 </section>
 
-<section>
+<section class="full_height">
     <div class="container-fluid alpha omega banner_container banner_bottom">
         <div class="col-md-6 hero alpha omega">
             <img src="build/images/banner2.jpg">
@@ -396,15 +397,17 @@
 
 <section>
     <div class="container featured_more">
-        <div class="heading_full">
-            <h2>Section Title</h2>
+        <div class="col-md-12">
+            <div class="heading_full">
+                <h2>Section Title</h2>
+            </div>
         </div>
         <div class="col-md-9">
              <div class="featured_item">
                 <div class="image">
                     <div class="tag">
                         <span class="pin"></span>
-                        <span class="heading">New Offer</span>
+                        <span class="heading">Article</span>
                     </div>
                     <img src="build/images/img4.jpg">
                 </div>
@@ -423,7 +426,7 @@
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">News</span>
                         </div>
                         <img src="build/images/img1.jpg">
                     </div>
@@ -439,7 +442,7 @@
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">Article</span>
                         </div>
                         <img src="build/images/img1.jpg">
                     </div>
@@ -455,7 +458,7 @@
                     <div class="image">
                         <div class="tag">
                             <span class="pin"></span>
-                            <span class="heading">New Offer</span>
+                            <span class="heading">Offer</span>
                         </div>
                         <img src="build/images/img1.jpg">
                     </div>
@@ -538,11 +541,13 @@
         </div>
     </div>
 </section>
-<section>
+<section class="postings">
 <div class="posts">
     <div class="container">
-        <div class="heading_full">
-            <h2>#DUBAIRECHARGED</h2>
+        <div class="col-md-12">
+            <div class="heading_full">
+                <h2>#DUBAIRECHARGED</h2>
+            </div>
         </div>
     </div>
     <div class="slider_wrapper">
@@ -632,6 +637,7 @@
                 </div>
             </div>
         </div>
+        <div class="clearfix"></div>
     </div>
 </div>
 </section>
@@ -677,6 +683,45 @@
         </div>
     </div>
 </footer>
+<div class="overlay"></div>
+<div id="favourites" class="favourites_container">
+    <div class="featured_item">
+        <div class="image">
+            <img src="build/images/img2.jpg">
+        </div>
+        <div class="content">
+            <h3>Venue Name With Offer Description</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="more">Go to Venue</a>
+        </div>
+    </div>
+    <div class="featured_item">
+        <div class="image">
+            <img src="build/images/img2.jpg">
+        </div>
+        <div class="content">
+            <h3>Venue Name With Offer Description</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="more">Go to Venue</a>
+        </div>
+    </div>
+    <div class="featured_item">
+        <div class="image">
+            <img src="build/images/img2.jpg">
+        </div>
+        <div class="content">
+            <h3>Venue Name With Offer Description</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="more">Go to Venue</a>
+        </div>
+    </div>
+</div>
 
 <script src="build/js/pinpointmedia.min.js"></script>
 </body>

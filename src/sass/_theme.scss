@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
+	left: 0;
 	overflow-x: hidden;
+	position: relative;
+	-webkit-transition: left 0.5s; transition: left 0.5s;
+	&.slide {left: $slideLeft;}
 }
 html {height: 100%;}
 
@@ -20,13 +25,14 @@ html {height: 100%;}
 .push-right {float: right;}
 h1, h2, h3, h4, h5, p {margin: 0; padding: 0;}
 p {font-size: 18px; line-height: 22px;}
-section {height: 100%;}
+section {&.full_height {height: 99%;}}
+input {-webkit-appearance: none;}
 
 .heading_full {
-	position: relative; margin: 70px 0px;
+	position: relative; margin: 60px 0px;
 	h2 {
 		position: relative; z-index: 20; background: $light_bg; display: table; margin: auto;
-		padding: 0px 25px; letter-spacing: 2px; font-size: 20px; text-transform: uppercase; color: $text_light;
+		padding: 0px 25px; letter-spacing: 4px; font-size: 18px; text-transform: uppercase; color: $text_light;
 	}
 	&:after {content: ""; position: absolute; width: 100%; z-index: 10; height: 1px; background: $text_light; top: 15px;}
 }
@@ -36,4 +42,11 @@ a {text-decoration: none;}
 ul {margin: 0; padding: 0;}
 li {list-style-type: none; display: inline-block;}
 
-// @include font-face('arabic', 'GE_Dinar_One_Medium', 'arabic', '.otf','regular');
+@media only screen and (max-width: 620px) {
+	section.full_height {
+		height: auto;
+	}
+	.heading_full h2 {padding: 0 15px; font-size: 15px;}
+	.heading_full:after {top: 12px;}
+	html {overflow-y: hidden;}
+}

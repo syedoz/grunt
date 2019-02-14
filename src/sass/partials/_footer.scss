@@ -6,7 +6,7 @@ footer {
         .form_row {
             border-top: 1px solid $light_grey; border-bottom: 1px solid $light_grey;
             input {
-                background: $black; border-right: 1px solid $light_grey;
+                background: $black; border-right: 1px solid $light_grey; color: $white;
                 &::-webkit-input-placeholder {color: $grey_font;}
                 &::-moz-placeholder {color: $grey_font;}
                 &:-ms-input-placeholder {color: $grey_font;}
@@ -16,7 +16,7 @@ footer {
         }
     }
     .footer_nav {
-        margin: 140px 0px 20px; border-bottom: 1px solid $light_grey; padding-bottom: 18px;
+        margin: 70px 0 20px; border-bottom: 1px solid $light_grey; padding-bottom: 18px;
         ul {margin: 0; padding: 0; text-align: center;}
         li {
             list-style-type: none; display: inline-block; font-size: 12px; margin: 0px 12px;
@@ -39,4 +39,18 @@ footer {
     }
     .made_by {float: right;}
     div {display: inline-block;}
+}
+
+@media only screen and (max-width: 620px) {
+    footer .subscribe_form .form_row input[type=text] {
+        background: #000; border-bottom: 1px solid #333; border-right: 0;
+    }
+    .bottom_section .rights {
+        float: left; margin-top: 40px; text-align: center; width: 100%;
+    }
+    .bottom_section .made_by {
+        float: right;
+        width: 100%;
+        margin-top: 15px;
+    }
 }

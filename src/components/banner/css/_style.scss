@@ -3,16 +3,20 @@
     .hero {
         img {width: 100%;}
     }
+    &.hero_section {.form .inner {padding-top: 300px;}}
 }
 
 .form {
     height: 100%;
     .inner {height: 100%; display: table-cell; vertical-align: middle;}
-    .content_container {max-width: 388px; margin: auto; height: 100%; display: table;}
+    .content_container {max-width: 405px; margin: auto; height: 100%; display: table;}
     h2 img {max-width: 250px;}
     p {margin: 30px 0px;}
     form {
-        label {display: block; text-transform: uppercase; color: $baseColor; font-size: 14px; letter-spacing: 4px;}
+        label {
+            display: block; text-transform: uppercase; color: $baseColor; font-weight: 500;
+            font-size: 13px; letter-spacing: 4px; font-family: 'Roboto Mono', monospace;
+        }
         input {
             width: 100%; margin-top: 5px; padding-bottom: 4px;
             &[type=text]{border: none; border-bottom: 0.15em solid $border_light;}
@@ -22,21 +26,22 @@
             &:-ms-input-placeholder {color: $placeholder; font-size: 12px;}
             &:-moz-placeholder {color: $placeholder; font-size: 12px;}
             &[type=submit]{
-                border: 0.15em solid $border_light; text-transform: uppercase; color: #bdbdbd;
-                letter-spacing: 3px; font-size: 10px; padding: 5px 0px; cursor: pointer;
+                border: 2px solid $border_light; text-transform: uppercase; color: #bdbdbd;
+                letter-spacing: 2px; font-size: 8px; padding: 5px 0px; cursor: pointer;
             }
         }
         select{
             border: none; border-bottom: 0.15em solid $border_light; border-right: 0.15em solid $border_light;
             -webkit-appearance: none;  -moz-appearance: none; appearance: none; width: 100%; margin-top: 5px;
-            border-radius: 0; background: none; color: $placeholder; font-size: 12px; padding-bottom: 4px;
+            border-radius: 0; background: url(../images/arrowDown.png) no-repeat 165px 4px; color: $placeholder; font-size: 12px;
+            padding-bottom: 4px; position: relative; background-size: 16px;
             &:focus {outline: 0;}
             option {
                 &:first-child {color: $placeholder;}
             }
         }
         .row {
-            float: left; margin: 22px 0;
+            float: left; margin: 16px 0 22px;
             &.half {
                 width: 50%;
                 &:nth-child(even) {padding-right: 10px;}
@@ -53,13 +58,29 @@
     .form {
         .content_container {
             max-width: 80%; width: 100%; position: relative;
-            .head {position: absolute; top: 15px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
-            .date {position: absolute; bottom: 15px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
+            .head {position: absolute; top: 45px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
+            .date {position: absolute; bottom: 35px; width: 100%; text-align: center; font-size: 8px; letter-spacing: 3px; text-transform: uppercase;}
             h2 {font-size: 60px; text-align: center; line-height: 75px;}
             .cta_common {
                 display: table; margin: auto; color: $white;
-                padding: 6px 35px; margin-top: 40px;
+                padding: 6px 35px; margin-top: 40px; font-size: 8px;
             }
         }
     }
+}
+
+@media only screen and (max-width: 620px) {
+    .banner_container 
+    {
+        .hero{max-height: 280px; overflow: hidden;}
+    }
+    .banner_container.hero_section .form .inner {
+        padding-top: 40px;
+    }
+    .form form select {background: url(../images/arrowDown.png) no-repeat 150px 6px; background-size: 16px;}
+    .form .inner {height: auto; display: block;}
+    .banner_bottom .form .content_container h2 {font-size: 40px; line-height: 55px; margin: 70px 0px 30px;}
+    .banner_bottom .form .content_container .date {position: relative; bottom:0; margin-top: 20px;}
+    .banner_bottom .form .content_container .cta_common {margin-top: 0;}
+    .form {padding-bottom: 30px;}
 }
