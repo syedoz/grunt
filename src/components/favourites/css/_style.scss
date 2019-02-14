@@ -1,0 +1,8 @@
+.favourites_container {
+    position: fixed; z-index: 90; left: -999px; top: 0; background: $white; bottom: 0;
+    padding: 95px 50px 0px; overflow-y: scroll; max-width: $slideLeft; -webkit-transition: left 0.5s; transition: left 0.5s;
+}
+
+body.slide {
+    .favourites_container {left: 0;}
+}
